@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Routes,
-  Route,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import CreateBook from "./pages/CreateBook";
 import DeleteBook from "./pages/DeleteBook";
@@ -35,7 +30,7 @@ const router = createBrowserRouter([
 ]);
 const App = () => {
   return (
-    <div className="App">
+    <div className="App max-w-[1500px] mx-auto">
       <RouterProvider router={router} />
     </div>
   );
